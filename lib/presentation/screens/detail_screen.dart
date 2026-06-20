@@ -84,18 +84,12 @@ class DetailScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 16),
-                    Hero(
-                      tag: 'title-${publication.id}',
-                      child: Material(
-                        type: MaterialType.transparency,
-                        child: Text(
-                          publication.title,
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                fontWeight: FontWeight.bold,
-                                height: 1.3,
-                              ),
-                        ),
-                      ),
+                    Text(
+                      publication.title,
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            height: 1.3,
+                          ),
                     ),
                   ],
                 ),
